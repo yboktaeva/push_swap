@@ -27,6 +27,7 @@ SRCS	= 	main.c \
 			big_sort.c \
 
 OBJS	=	${SRCS:.c=.o}
+DEP	=	${OBJS:.o=.d}
 
 CC	=	cc
 
@@ -36,8 +37,9 @@ ${NAME}: ${OBJS}
 	${CC} ${CFLAGS} ${SRCS} -o ${NAME}
 
 %.o: %.c
-	${CC} ${CFLAGS} -o $@ -c $<
+	${CC} ${CFLAGS} -MMD -MP -o $@ -c $<
 
+-include ${DEP}
 
 all:	${NAME}
 
