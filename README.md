@@ -1,6 +1,6 @@
 # Push_swap
 
-A 42 School project that implements an efficient sorting algorithm using two stacks and a limited set of operations.
+A project that implements an efficient sorting algorithm using two stacks and a limited set of operations.
 
 ## Table of Contents
 
@@ -167,11 +167,3 @@ The algorithm aims for optimal performance:
 - **5 numbers**: ≤ 12 operations  
 - **100 numbers**: ≤ 700 operations (typically ~550)
 - **500 numbers**: ≤ 5500 operations (typically ~4000)
-
-## 👤 Author
-
-- GitHub: [@yboktaeva](https://github.com/yboktaeva)
-
----
-
-*This project is part of the 42 School curriculum and focuses on algorithm optimization, data structures, and efficient problem-solving.*
